@@ -24,8 +24,8 @@ shading and morphological/temporal/multisample anti-aliasing.</p>
   <releases>
     <release version="2024-04-25" date="2024-04-25" type="stable"/>
   </releases>
-  <url type="homepage">https://tesseract.gg/</url>
-  <url type="bugtracker">https://tesseract.gg/forum/viewforum.php?id=7</url>
+  <url type="homepage">http://tesseract.gg/</url>
+  <url type="bugtracker">http://tesseract.gg/forum/viewforum.php?id=7</url>
   <url type="vcs-browser">https://websvn.tuxfamily.org/tesseract/main/</url>
   <content_rating type="oars-1.1">
     <content_attribute id="violence-realistic">moderate</content_attribute>
