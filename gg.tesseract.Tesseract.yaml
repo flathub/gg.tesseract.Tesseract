@@ -31,7 +31,8 @@ modules:
           url-template: https://github.com/libsdl-org/SDL_image/releases/download/release-$version/SDL2_image-$version.tar.gz
 
   - name: tesseract
-    buildsystem: cmake-ninja
+    no-autogen: true
+    buildsystem: autotools
     build-options:
       cflags: -O3 -fomit-frame-pointer
       cflags-override: true
