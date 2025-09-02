@@ -31,16 +31,12 @@ modules:
           url-template: https://github.com/libsdl-org/SDL_image/releases/download/release-$version/SDL2_image-$version.tar.gz
 
   - name: tesseract
-    no-autogen: true
+    buildsystem: cmake-ninja
     build-options:
       cflags: -O3 -fomit-frame-pointer
       cflags-override: true
       cxxflags: -O3 -fomit-frame-pointer -ffast-math
       cxxflags-override: true
-      ldflags: -L/app/lib
-      env:
-        C_INCLUDE_PATH: /app/include/SDL2
-        CPLUS_INCLUDE_PATH: /app/include/SDL2
     subdir: src
     post-install:
       - mkdir -p ${FLATPAK_DEST}/share/tesseract
